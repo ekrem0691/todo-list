@@ -1,0 +1,128 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(238, 207, 29);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: right; */
+}
+
+.toDolist {
+    width: 100%;
+    margin-top: 3rem;
+    text-decoration: underline;
+    text-align: center;
+    margin-right: 25%;
+}
+
+#title {
+    font-size: 2rem;
+    color: crimson;
+    border: 5px solid black;
+    display: block;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    margin-right: 0;
+}
+
+img {
+    width: 15rem;
+    cursor: pointer;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width:1024px) {
+    img {
+        width: 15rem;
+    }
+}
+
+.todo-input {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    width: 90%;
+}
+
+#input-text {
+    border: 2px solid rgb(238, 53, 53);
+    border-radius: 0.7rem;
+    width: 25rem;
+    height: 2rem;
+    margin-left: 0;
+    padding: 1.2rem;
+    background-color: rgb(194, 216, 208);
+    cursor: pointer;
+    font-weight: 700;
+    padding-left: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+#input-text:hover {
+    background-color: aqua;
+    width: 26rem;
+}
+
+#input-add {
+    border: 2px solid rgb(240, 55, 55);
+    border-radius: 5px;
+    background-color: #93e438;
+    padding: 10px 4px;
+    margin: 3px;
+    border-top-right-radius: 1rem;
+    margin-top: 0%;
+    cursor: pointer;
+}
+
+#input-add:hover {
+    background-color: aqua;
+    width: 3rem;
+}
+
+#input-clear {
+    border: 3px dotted rgb(43, 14, 14);
+    border-radius: 10px;
+    width: 5rem;
+    background-color: rgb(237, 65, 65);
+    color: rgba(218, 218, 26, 0.753);
+    cursor: pointer;
+    width: 7rem;
+}
+
+#input-clear:hover {
+    background-color: aqua;
+    color: black;
+    width: 7.5rem;
+}
+
+.olists {
+    list-style-type: disc;
+}
+
+.lists {
+    background-color: #4fdfe4c5;
+    margin-top: 0.5rem;
+}
+
+.added {
+    border: 2px solid rgb(199, 174, 36);
+}
+
+.olists {
+    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+}
